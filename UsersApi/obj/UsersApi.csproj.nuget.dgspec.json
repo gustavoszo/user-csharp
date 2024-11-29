@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raquel\\source\\repos\\UsersApi\\UsersApi\\UsersApi.csproj": {}
+    "C:\\Users\\gustavo.oliveira\\source\\repos\\UserApi\\user-csharp\\UsersApi\\UsersApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raquel\\source\\repos\\UsersApi\\UsersApi\\UsersApi.csproj": {
+    "C:\\Users\\gustavo.oliveira\\source\\repos\\UserApi\\user-csharp\\UsersApi\\UsersApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raquel\\source\\repos\\UsersApi\\UsersApi\\UsersApi.csproj",
+        "projectUniqueName": "C:\\Users\\gustavo.oliveira\\source\\repos\\UserApi\\user-csharp\\UsersApi\\UsersApi.csproj",
         "projectName": "UsersApi",
-        "projectPath": "C:\\Users\\Raquel\\source\\repos\\UsersApi\\UsersApi\\UsersApi.csproj",
-        "packagesPath": "C:\\Users\\Raquel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raquel\\source\\repos\\UsersApi\\UsersApi\\obj\\",
+        "projectPath": "C:\\Users\\gustavo.oliveira\\source\\repos\\UserApi\\user-csharp\\UsersApi\\UsersApi.csproj",
+        "packagesPath": "C:\\Users\\gustavo.oliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gustavo.oliveira\\source\\repos\\UserApi\\user-csharp\\UsersApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raquel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gustavo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

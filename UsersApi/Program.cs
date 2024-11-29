@@ -16,9 +16,10 @@ namespace UsersApi
             var connectionString = builder.Configuration.GetConnectionString("dbConnection");
 
             builder.Services.AddDbContext<UserDbContext>(opts => opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            //  Esta linha configura o Identity do ASP.NET Core, que é um sistema completo para gerenciamento de autenticação e autorização. Ele lida com usuários, roles (funções), autenticação, gerenciamento de senhas, entre outros.
             builder.Services
                 .AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<UserDbContext>()
+                .AddEntityFrameworkStores<UserDbContext>() //  Essa linha diz ao Identity para usar o UserDbContext para armazenar os dados do Identity no banco de dados. Ou seja, ele vai usar o UserDbContext para criar tabelas como AspNetUsers (para usuários), AspNetRoles (para roles), AspNetUserRoles (associação de usuários e roles), etc.
                 .AddDefaultTokenProviders();
                 
             builder.Services.AddControllers();
