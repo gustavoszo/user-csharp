@@ -116,3 +116,5 @@ C:\Users\Raquel\source\repos\UsersApi\UsersApi\obj\Debug\net8.0\UsersApi.MvcAppl
 C:\Users\Raquel\source\repos\UsersApi\UsersApi\obj\Debug\net8.0\UsersApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Raquel\source\repos\UsersApi\UsersApi\obj\Debug\net8.0\UsersApi.sourcelink.json
 >>>>>>> 4c9ae248f36e8171f1ca616978d1e0ea0be8da68
+C:\Users\gustavo.oliveira\source\repos\UserApi\user-csharp\UsersApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gustavo.oliveira\source\repos\UserApi\user-csharp\UsersApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

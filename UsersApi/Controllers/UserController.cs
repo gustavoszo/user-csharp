@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using UsersApi.Dtos;
 using UsersApi.Models;
+using UsersApi.Services;
 
 namespace UsersApi.Controllers
 {
@@ -12,12 +13,12 @@ namespace UsersApi.Controllers
     {
 
         private IMapper _iMapper;
-        private UserManager<User> _userManager;
+        private UserService _userService;
 
-        public UserController(IMapper iMapper, UserManager<User> userManager)
+        public UserController(IMapper iMapper, UserService userService)
         {
             _iMapper = iMapper;
-            _userManager = userManager;
+            _userService = userService;
         }
 
         [HttpPost]
@@ -25,7 +26,7 @@ namespace UsersApi.Controllers
         {
             User user = _iMapper.Map<User>(userDto);
 
-            IdentityResult result = await _userManager.CreateAsync(user, userDto.Password);
+            IdentityResult result = await _userService.Create(user);
             if (result.Errors.Any())
             {
                 return BadRequest(result.Errors.Select(e => e.Description));
