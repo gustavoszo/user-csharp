@@ -21,6 +21,8 @@ namespace UsersApi
                 .AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<UserDbContext>() //  Essa linha diz ao Identity para usar o UserDbContext para armazenar os dados do Identity no banco de dados. Ou seja, ele vai usar o UserDbContext para criar tabelas como AspNetUsers (para usuários), AspNetRoles (para roles), AspNetUserRoles (associação de usuários e roles), etc.
                 .AddDefaultTokenProviders();
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
                 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
